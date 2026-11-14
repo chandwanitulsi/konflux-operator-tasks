@@ -95,7 +95,7 @@ spec:
         - use
         - $(params.SOURCE_ARTIFACT)=/var/workdir/source
     - name: check-lifecycle-eligibility
-      image: quay.io/konflux-ci/operator-foundry:0.1@sha256:333fd99341f971adb921b8ec9c8780329eff7e3869dd32460d472f1b952c086f
+      image: quay.io/konflux-ci/operator-foundry:0.1@sha256:809bb8385225af6459789674b3c6810ea2d85b6f8714a4720596c53c51f1308a
       computeResources:
         requests:
           memory: 64Mi
@@ -128,7 +128,7 @@ spec:
 
         echo "[INFO] Component eligible for lifecycle injection (targets OCP 5.0+): $(cat /shared/eligible)"
     - name: get-packages
-      image: quay.io/konflux-ci/operator-foundry:0.1@sha256:333fd99341f971adb921b8ec9c8780329eff7e3869dd32460d472f1b952c086f
+      image: quay.io/konflux-ci/operator-foundry:0.1@sha256:809bb8385225af6459789674b3c6810ea2d85b6f8714a4720596c53c51f1308a
       computeResources:
         requests:
           memory: 64Mi
@@ -192,7 +192,7 @@ spec:
 
         plcc2fbc --validators none --package "$(cat /shared/packages.txt)" --split /shared/lifecycle/
     - name: inject-lifecycle
-      image: quay.io/konflux-ci/operator-foundry:0.1@sha256:333fd99341f971adb921b8ec9c8780329eff7e3869dd32460d472f1b952c086f
+      image: quay.io/konflux-ci/operator-foundry:0.1@sha256:809bb8385225af6459789674b3c6810ea2d85b6f8714a4720596c53c51f1308a
       computeResources:
         requests:
           memory: 64Mi
