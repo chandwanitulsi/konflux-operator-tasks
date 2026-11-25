@@ -138,7 +138,7 @@ spec:
         - "bash"
         - $(params.OPM_ARGS[*])
     - name: convert-image-tags-to-digests
-      image: quay.io/konflux-ci/konflux-test:v1.5.0@sha256:fbd5ad045b902065990218922aa6f343e8eb5fd039ecd445bc54819b8e968c3e
+      image: quay.io/konflux-ci/konflux-test:v1.5.12@sha256:18652fc45eb5f3f474673bc0b9bcea1d3431dbb68d9a90ad2553668721f325f5
       computeResources:
         limits:
           memory: 64Mi
@@ -289,7 +289,7 @@ spec:
         load_utils
         convert_tags_to_digests
     - name: replace-related-images-pullspec-in-file
-      image: quay.io/konflux-ci/konflux-test:v1.5.0@sha256:fbd5ad045b902065990218922aa6f343e8eb5fd039ecd445bc54819b8e968c3e
+      image: quay.io/konflux-ci/konflux-test:v1.5.12@sha256:18652fc45eb5f3f474673bc0b9bcea1d3431dbb68d9a90ad2553668721f325f5
       computeResources:
         limits:
           memory: 64Mi
